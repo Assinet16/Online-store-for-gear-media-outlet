@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Administrateur.css">
+</head>
+<body>
+    <H1> Bienvenu dans la suppression du client </H1>
+    <form  action="supprimer_client.php" method="post" >
+       
+            <label for="id_client">ID du client à supprimer :</label>
+            <input type="text" id="id_client" name="id_client" required><br><br>
+            <input type="submit" name="supprimer" value="Supprimer ce client">
+        </form>
+    
+    
+  
+    </form>
+    <H1> Bienvenu dans la suppression du produit</H1>
+    <form  action="supprimer_produit.php" method="post" >
+       
+        <label for="id_produit">ID du produit à supprimer :</label>
+        <input type="text" id="id_produit" name="id_produit" required><br><br>
+        <input type="submit" name="supprimer" value="Supprimer ce produit">
+    </form>
+
+
+
+
+</form>
+    <H1> Bienvenu dans la Modufication client </H1>
+    <form action="modifier_client.php" method="post" >
+        
+        <label for="id_client">ID du client à Modifier :</label>
+        <input type="text" id="id_client" name="id_client" required> <br> <br>
+        <label for="nouvelle_adresse_email">Nouvelle adresse email:</label>
+        <input type="email" id="nouvelle_adresse_email" name="nouvelle_adresse_email"><br><br>
+        <label for="nouvelle_adresse">Nouvelle adresse:</label>
+        <input type="text" id="nouvelle_adresse" name="nouvelle_adresse"><br><br>
+        <label for="nouveau_nom">Nouveau nom:</label>
+        <input type="text" id="nouveau_nom" name="nouveau_nom"><br><br>
+        <label for="nouveau_prenom">Nouveau prénom:</label>
+        <input type="text" id="nouveau_prenom" name="nouveau_prenom"><br><br>
+        <label for="nouveau_mot_de_passe">Nouveau mot de passe:</label>
+        <input type="password" id="nouveau_mot_de_passe" name="nouveau_mot_de_passe"><br><br>
+        <label for="nouvelles_autres_informations">Nouvelles autres informations:</label>
+        <textarea id="nouvelles_autres_informations" name="nouvelles_autres_informations"></textarea><br><br>
+        <input type="submit" name="modifier" value="Modifier ce client">
+    </form>
+    <H1> Bienvenu dans la Modufication de produit</H1>
+    <form action="modifier_produit.php" method="post">
+        
+            <label for="id_produit">ID du produit à modifier :</label>
+            <input type="text" id="id_produit" name="id_produit" required><br><br>
+            <label for="nouveau_nom">Nouveau nom du produit :</label>
+            <input type="text" id="nouveau_nom" name="nouveau_nom" required><br><br>
+            <label for="nouvelle_description">Nouvelle description :</label>
+            <input type="text" id="nouvelle_description" name="nouvelle_description" required><br><br>
+            <label for="nouveau_prix">Nouveau prix du produit :</label>
+            <input type="text" id="nouveau_prix" name="nouveau_prix" required><br><br>
+            <label for="nouvelle_categorie">Nouvelle catégorie :</label>
+            <input type="text" id="nouvelle_categorie" name="nouvelle_categorie" required><br><br>
+            <label for="nouveau_stock">Nouveau stock disponible :</label>
+            <input type="text" id="nouveau_stock" name="nouveau_stock" required><br><br>
+            <input type="submit" name="modifier" value="Modifier ce produit">
+        
+        
+    </form>
+ 
+    
+</form>     
+</body>
+</html>

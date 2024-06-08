@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Informations Client</title>
+        <link rel="stylesheet" href="information.css">
+    </head>
+    <body>
+        <header>
+            <h1>Informations Client Bienvenue AGain</h1>
+        </header>
+        <main>
+            <form id="information-form"  action="achteur.php" method="post">
+                
+                <table>
+                    <tr>
+                        <td><label for="nom">Nom De Client:</label></td>
+                        <td><input type="text" id="nom" name="nom" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prenom">Prénom De Client::</label></td>
+                        <td><input type="text" id="prenom" name="prenom" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="adresse">Adresse De Client::</label></td>
+                        <td><input type="text" id="adresse" name="adresse" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Adresse email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Numéro de téléphone:</label></td>
+                        <td><input type="tel" id="phone" name="phone" required></td>
+                    </tr>
+                    <tr>
+                     <td><label for="autreinfo">Autre infromation:</label></td>
+                     <td><textarea id="autreinfo" name="autreinfo"></textarea> </td>
+                </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div>
+                                <button type="submit">Confirmer</button>
+                                <button type="reset" value="Effacer">Effacer</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+        </main>
+        <script>
+            document.getElementById('information-form').addEventListener('submit', function(event) {
+                var nom = document.getElementById('nom').value;
+                var prenom = document.getElementById('prenom').value;
+                var adresse = document.getElementById('adresse').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+                var produit = document.getElementById('panier-produits').value;
+                var quantite = document.getElementById('panier-quantites').value;
+                
+                if (nom === '' || prenom === '' || adresse === '' || email === '' || phone === '' || produit === '' || quantite === '') {
+                    alert('Veuillez remplir tous les champs.');
+                    event.preventDefault();
+                }
+            });
+        </script>
+        
+    </body>
+    </html>
+    
+ 

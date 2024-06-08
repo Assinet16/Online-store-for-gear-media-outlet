@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif; /* نوع الخط */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحشوات الافتراضية */
+}
+
+header {
+    background-color: #e8d8d8; /* لون الخلفية */
+    color: #007bff; /* لون النص */
+    padding: 20px; /* حشوة داخلية */
+    text-align: center; /* محاذاة النص في المركز */
+}
+
+main {
+    display: flex; /* استخدام flexbox لتنسيق العناصر الداخلية */
+    justify-content: space-around; /* توزيع العناصر مع ترك مسافة بينها */
+    flex-wrap: wrap; /* السماح للعناصر بالتفاف إلى الأسطر التالية */
+    padding: 20px; /* حشوة داخلية */
+}
+
+.product {
+    background-color: #92a9c888; /* لون الخلفية مع شفافية */
+    border-radius: 10px; /* زوايا مدورة */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ظل لصندوق */
+    padding: 20px; /* حشوة داخلية */
+    margin-bottom: 20px; /* حشوة سفلية */
+    width: 20%; /* عرض العنصر 20% من الحاوية */
+}
+
+.product img {
+    width: 90%; /* عرض الصورة 90% من العنصر الحاوي */
+    height: 50%; /* ارتفاع الصورة 50% من العنصر الحاوي */
+    border-radius: 10px; /* زوايا مدورة للصورة */
+}
+
+.product h3 {
+    font-size: medium; /* حجم الخط متوسط */
+}
+
+.product p {
+    font-size: small; /* حجم الخط صغير */
+    letter-spacing: 3px; /* تباعد الحروف */
+    text-align: center; /* محاذاة النص في المركز */
+    font-size: 20px; /* حجم الخط */
+    color: #007bff; /* لون النص */
+}
+
+.information {
+    border-radius: 20px; /* زوايا مدورة */
+    background-color: #92a9c888; /* لون الخلفية مع شفافية */
+    padding: 20px; /* حشوة داخلية */
+    margin: 30px; /* هوامش خارجية */
+}
+
+h3 {
+    text-align: center; /* محاذاة النص في المركز */
+}
+
+label {
+    margin: 20px; /* هوامش خارجية */
+}
+
+.information div button {
+    size: 10%; /* حجم الزر 10% (لاحظ أن خاصية size غير موجودة في CSS، يمكن استبدالها بـ width أو height إذا لزم الأمر) */
+    background-color: #007bff; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    border: none; /* إزالة الإطار */
+    border-radius: 15px; /* زوايا مدورة */
+    padding: 10px 20px; /* حشوة داخلية */
+    cursor: pointer; /* تغيير شكل المؤشر عند التحويم فوق الزر */
+    margin-left: 30px; /* هوامش يسرى */
+}
+
+button {  
+    background-color:#007bff;  /* لون الخلفية  #007bff  #007bff*/
+    color: #fff; /* لون النص */
+    border: none; /* إزالة الإطار */
+    border-radius: 15px; /* زوايا مدورة */
+    padding: 10px 20px; /* حشوة داخلية */
+    cursor: pointer; /* تغيير شكل المؤشر عند التحويم فوق الزر */
+    margin-left: 20px; /* هوامش يسرى */
+    margin-right: 10px; /* هوامش يمنى */
+    width: 80%; /* عرض الزر 80% من الحاوية */
+}
+
+aside {
+    background-color: #92a9c888 ;
+    color: #fff;
+    padding: 20px;
+  /*  position: fixed;
+  right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);*/
+    }
+ 
+    
+   
+    aside h2 {
+         margin-top: 0;
+    }
+    
+    aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+  
+        
+    aside p {
+         font-size: 1.2em;
+        margin-top: 20px;
+    }
+    
+    aside button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    font-size: 1em;
+    }
+    
+    aside button:hover {
+    background-color: #3e2fc5;
+    }

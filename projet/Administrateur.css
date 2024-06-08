@@ -1,0 +1,58 @@
+/* تعيين صورة خلفية للجسم وتكبيرها لتغطية الشاشة بالكامل */
+body {
+    background-image: url(img/pexels-ola-dapo-1754561-3345882.jpg);
+    background-size: 100%;
+    font-family: Arial, sans-serif; /* تعيين الخطوط الافتراضية */
+    margin: 0; /* إزالة هامش الصفحة */
+    padding: 0; /* إزالة حشو الصفحة */
+}
+
+/* تنسيق عنوان الصفحة */
+h1 {
+    font-family: cursive; /* تغيير نوع الخط */
+    text-align: center; /* محاذاة النص في الوسط */
+    margin-top: 50px; /* تباعد العنوان من الأعلى */
+    color: #007bff; /* لون النص */
+    text-decoration: underline; /* تسطير العنوان */
+}
+
+/* تنسيق نموذج الإدخال */
+form {
+    width: 500px; /* عرض النموذج */
+    margin: 0 auto; /* محاذاة النموذج في الوسط */
+    background-color: #fff; /* لون خلفية النموذج */
+    padding: 20px; /* حشو النموذج */
+    border-radius: 5px; /* تدوير حواف النموذج */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* إضافة ظل للنموذج */
+}
+
+/* تنسيق التسميات */
+label {
+    display: block; /* عرض التسميات كتلة منفصلة */
+    margin-bottom: 5px; /* تباعد التسميات من الأسفل */
+    color: #333; /* لون التسمية */
+}
+
+/* تنسيق حقول الإدخال */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* عرض حقول الإدخال بالكامل */
+    padding: 10px; /* حجم الحشو داخل حقول الإدخال */
+    margin-bottom: 10px; /* تباعد حقول الإدخال من الأسفل */
+    border: 1px solid #ccc; /* إطار حقول الإدخال */
+    border-radius: 5px; /* تدوير حواف حقول الإدخال */
+    box-sizing: border-box; /* تحديد حجم حقول الإدخال بما في ذلك الحواف والحشو */
+}
+
+/* تنسيق زر الإرسال */
+input[type="submit"] {
+    width: 100%; /* عرض زر الإرسال بالكامل */
+    background-color: #007bff; /* لون خلفية الزر */
+    color: #fff; /* لون النص */
+    border: none; /* إزالة حدود الزر */
+    padding: 10px; /* حجم الحشو داخل الزر */
+    border-radius: 5px; /* تدوير حواف الزر */
+    cursor: pointer; /* تغيير المؤشر عند التحويم */
+}

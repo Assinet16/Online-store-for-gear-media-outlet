@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue à la Boutique online dz mes chers</title>
+    <link rel="stylesheet" href="achteur.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Bienvenue à la Boutique online dz mes chers</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Product Section -->
+        <section class="product">
+            <img src="img/PC Portable ASUS VivoBook 14 R1400.webp" alt="PC Portable ASUS VivoBook 14 R1400">
+            <h3>PC Portable ASUS VivoBook 14 R1400</h3>
+            <p>5500.00 DA</p>
+            <button type="button" onclick="addToCart('PC Portable ASUS VivoBook 14 R1400', 5500.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/PC portables HP.webp" alt="PC portables HP">
+            <h3>PC portables HP</h3>
+            <p>7000.00 DA</p>
+            <button type="button" onclick="addToCart('PC portables HP', 7000.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/Ordinateur portable HP Pavilion 15-EG0070 15,6 tactile 8 Go 512 Go.jpg" alt="PC portables HP Pavilion 15-EG0070">
+            <h3>PC portables HP Pavilion 15-EG0070</h3>
+            <p>7000.00 DA</p>
+            <button type="button" onclick="addToCart('PC portables HP Pavilion 15-EG0070', 7000.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/Ordinateur portable Dell XPS 13 Plus 9320 - 13.4 Écran tactile - Intel Core i7.jpg" alt="PC portable Dell XPS 13">
+            <h3>PC portable Dell XPS 13</h3>
+            <p>8000.00 DA</p>
+            <button type="button" onclick="addToCart('PC portable Dell XPS 13', 8000.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/Laptop DELL Latitude 7420, Intel core i7-1165G7, 16Go LPDDR4x, 256Go SSD.jpg" alt="Laptop DELL Intel core i7">
+            <h3>Laptop DELL Intel core i7</h3>
+            <p>8500.00 DA</p>
+            <button type="button" onclick="addToCart('Laptop DELL Intel core i7', 8500.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/iPhone 11 64 GB.webp" alt="iPhone 11 64 GB">
+            <h3>iPhone 11 64 GB</h3>
+            <p>8000.00 DA</p>
+            <button type="button" onclick="addToCart('iPhone 11 64 GB', 8000.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/iPhone 12 Pro Max de 512 Go.jfif" alt="iPhone 12 Pro Max de 512 Go">
+            <h3>iPhone 12 Pro Max de 512 Go</h3>
+            <p>14000.00 DA</p>
+            <button type="button" onclick="addToCart('iPhone 12 Pro Max de 512 Go', 14000.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/iPhone 15 Pro Max.jpg" alt="iPhone 15 Pro Max">
+            <h3>iPhone 15 Pro Max</h3>
+            <p>18000.00 DA</p>
+            <button type="button" onclick="addToCart('iPhone 15 Pro Max', 18000.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/smartphone-samsung-s21-128gb-380-380.webp" alt="smartphone-samsung-s21-128gb">
+            <h3>smartphone-samsung-s21-128gb</h3>
+            <p>6000.00 DA</p>
+            <button type="button" onclick="addToCart('smartphone-samsung-s21-128gb', 6000.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/Coque de téléphone.webp" alt="Coque de téléphone">
+            <h3>Coque de téléphone</h3>
+            <p>2000.00 DA</p>
+            <button type="button" onclick="addToCart('Coque de téléphone', 2000.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/Apple AirPods Pro.jpg" alt="Apple AirPods Pro">
+            <h3>Apple AirPods Pro</h3>
+            <p>5000.00 DA</p>
+            <button type="button" onclick="addToCart('Apple AirPods Pro', 5000.00)">Ajouter au panier</button>
+        </section>
+        <section class="product">
+            <img src="img/Étui pour ordinateur portable 14 pouces.webp" alt="Étui pour ordinateur portable 14 pouces">
+            <h3>Étui pour ordinateur portable 14 pouces</h3>
+            <p>3000.00 DA</p>
+            <button type="button" onclick="addToCart('Étui pour ordinateur portable 14 pouces', 3000.00)">Ajouter au panier</button>
+        </section>
+    </main>
+
+    <form id="information-form" class="information" action="achteur.php" method="post">
+        <aside>
+            <h2>Votre Panier</h2>
+            <ul id="cart-items"></ul>
+            <label for="">Les Achats:</label>
+            <!-- أضف حقول الإدخال الخاصة بالمنتجات والكميات هنا -->
+            <input type="hidden" id="panier-produits" name="panier-produits" value="">
+            <input type="hidden" id="panier-quantites" name="panier-quantites" value="">
+            <p>Total: <span id="total-price">0</span> DA</p>
+            <button type="button" onclick="proceedToCheckout()">Procéder au paiement</button>
+        </aside>
+        <header>
+        <h1 > Donner de Clıent </h1></header>
+        <table>
+            <tr>
+                <td style="padding: 0.5rem;"><label for="nom">Nom De Client:</label></td>
+                <td style="padding: 0.5rem;"><input style="width: 100%;padding: 0.5rem;border: 1px solid #ccc;border-radius: 5px;margin-bottom: 1rem;" type="text" id="nom" name="nom" required></td>
+            </tr> 
+            <tr>
+                <td style="padding: 0.5rem;"><label style="display: block;margin-bottom: 0.5rem;color: #333;" for="prenom">Prénom De Client:</label></td>
+                <td style="padding: 0.5rem;"><input style="width: 100%;padding: 0.5rem;border: 1px solid #ccc;border-radius: 5px;margin-bottom: 1rem;" type="text" id="prenom" name="prenom" required></td>
+            </tr>
+            <tr>
+                <td style="padding: 0.5rem;"><label style="display: block;margin-bottom: 0.5rem;color: #333;" for="adresse">Adresse De Client:</label></td>
+                <td style="padding: 0.5rem;"><input style="width: 100%;padding: 0.5rem;border: 1px solid #ccc;border-radius: 5px;margin-bottom: 1rem;" type="text" id="adresse" name="adresse" required></td>
+            </tr>
+            <tr>
+                <td style="padding: 0.5rem;"><label style="display: block;margin-bottom: 0.5rem;color: #333;" for="email">Adresse email:</label></td>
+                <td style="padding: 0.5rem;"><input style="width: 100%;padding: 0.5rem;border: 1px solid #ccc;border-radius: 5px;margin-bottom: 1rem;" type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td style="padding: 0.5rem;"><label style="display: block;margin-bottom: 0.5rem;color: #333;" for="phone">Numéro de téléphone:</label></td>
+                <td style="padding: 0.5rem;"><input style="width: 100%;padding: 0.5rem;border: 1px solid #ccc;border-radius: 5px;margin-bottom: 1rem;" type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+             <td style="padding: 0.5rem;"><label style="display: block;margin-bottom: 0.5rem;color: #333;" for="autreinfo">Autre infromation:</label></td>
+             <td style="padding: 0.5rem;"><textarea style="width: 100%;padding: 0.5rem;border: 1px solid #ccc;border-radius: 5px;margin-bottom: 1rem;" id="autreinfo" name="autreinfo"></textarea> </td>
+        </tr>
+            <tr>
+                <td  style="padding: 0.5rem;" colspan="2">
+                    <div>
+                        <button  type="submit">Confirmer</button>
+                        <button  type="reset" value="Effacer">Effacer</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+   
+
+    <!-- Script for handling cart operations and form validation -->
+    <script>
+        var cart = [];
+        
+        function addToCart(productName, productPrice) {
+            var quantity = prompt("Entrez la quantité:", "1");
+            if (quantity != null && quantity > 0) {
+                var item = {
+                    name: productName,
+                    price: productPrice,
+                    quantity: parseInt(quantity)
+                };
+                cart.push(item);
+                updateCart();
+            }
+        }
+    
+        function updateCart() {
+            var cartItems = document.getElementById('cart-items');
+            var panierProduits = document.getElementById('panier-produits');
+            var panierQuantites = document.getElementById('panier-quantites');
+
+            cartItems.innerHTML = '';
+            var totalPrice = 0;
+            var produits = [];
+            var quantites = [];
+
+            cart.forEach(function(item) {
+                var li = document.createElement('li');
+                li.textContent = item.name + ' - ' + item.quantity + ' x ' + item.price + ' DA';
+                cartItems.appendChild(li);
+                totalPrice += item.price * item.quantity;
+
+                produits.push(item.name);
+                quantites.push(item.quantity);
+            });
+
+            panierProduits.value = produits.join(',');
+            panierQuantites.value = quantites.join(',');
+            document.getElementById('total-price').textContent = totalPrice;
+        }
+    
+        function proceedToCheckout() {
+            if (cart.length === 0) {
+                alert('Votre panier est vide.');
+                return;
+            }
+            scrollToInformationForm();
+        }
+    
+        function scrollToInformationForm() {
+            var informationForm = document.getElementById('information-form');
+            informationForm.scrollIntoView({ behavior: 'smooth' });
+        }
+    
+        document.getElementById('information-form').addEventListener('submit', function(event) {
+            var nom = document.getElementById('nom').value;
+            var prenom = document.getElementById('prenom').value;
+            var adresse = document.getElementById('adresse').value;
+            var email = document.getElementById('email').value;
+            var motdepasse = document.getElementById('motdepasse').value;
+            var categorie = document.getElementById('categorie').value;
+            var produit = document.getElementById('panier-produits').value;
+        var quantite = document.getElementById('panier-quantites').value;
+            if (nom === '' || prenom === '' || adresse === '' || email === '' || motdepasse === '' || categorie === ''|| produit === '' || quantite === '') {
+                alert('Veuillez remplir tous les champs.');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!-- <label for="produit">Le Produit:</label>
+        <select id="produit" name="produit">
+            <optgroup label="Accessoires">
+                <option value="Coque de téléphone">Coque de téléphone</option>
+                <option value="Apple AirPods Pro">Apple AirPods Pro</option>
+                <option value="Étui pour ordinateur portable">Étui pour ordinateur portable</option>
+            </optgroup>
+            <optgroup label="Smartphones">
+                <option value="iPhone 11 64 GB">iPhone 11 64 GB</option>
+                <option value="iPhone 12 Pro Max de 512 Go">iPhone 12 Pro Max de 512 Go</option>
+                <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+                <option value="smartphone-samsung-s21-128gb">smartphone-samsung-s21-128gb</option>
+            </optgroup>
+            <optgroup label="Ordinateurs">
+                <option value="PC Portable ASUS VivoBook 14 R1400">PC Portable ASUS VivoBook 14 R1400</option>
+                <option value="PC portables HP">PC portables HP</option>
+                <option value="PC portables HP Pavilion 15-EG0070">PC portables HP Pavilion 15-EG0070</option>
+                <option value="Ordinateur portable Dell XPS 13">Ordinateur portable Dell XPS 13</option>
+                <option value="Laptop DELL Intel core i7">Laptop DELL Intel core i7</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="quantite">La quantité de Produit:</label>
+        <input type="number" id="quantite" name="quantite" min="1" required><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var cart = [];
+        
+        function addToCart(productName, productPrice) {
+            var quantity = prompt("Entrez la quantité:", "1");
+            if (quantity != null && quantity > 0) {
+                var item = {
+                    name: productName,
+                    price: productPrice,
+                    quantity: parseInt(quantity)
+                };
+                cart.push(item);
+                updateCart();
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+///////////////////////
+<script>
+        var cart = [];
+        
+        function addToCart(productName, productPrice) {
+            var quantity = prompt("Entrez la quantité:", "1");
+            if (quantity != null && quantity > 0) {
+                var item = {
+                    name: productName,
+                    price: productPrice,
+                    quantity: parseInt(quantity)
+                };
+                cart.push(item);
+                updateCart();
+            }
+        }
+    
+        function updateCart() {
+            var cartItems = document.getElementById('cart-items');
+            var panierProduits = document.getElementById('panier-produits');
+            var panierQuantites = document.getElementById('panier-quantites');
+
+            cartItems.innerHTML = '';
+            var totalPrice = 0;
+            var produits = [];
+            var quantites = [];
+
+            cart.forEach(function(item) {
+                var li = document.createElement('li');
+                li.textContent = item.name + ' - ' + item.quantity + ' x ' + item.price + ' DA';
+                cartItems.appendChild(li);
+                totalPrice += item.price * item.quantity;
+
+                produits.push(item.name);
+                quantites.push(item.quantity);
+            });
+
+            panierProduits.value = produits.join(',');
+            panierQuantites.value = quantites.join(',');
+            document.getElementById('total-price').textContent = totalPrice;
+        }
+    
+        function proceedToCheckout() {
+            if (cart.length === 0) {
+                alert('Votre panier est vide.');
+                return;
+            }
+            scrollToInformationForm();
+        }
+    
+        function scrollToInformationForm() {
+            var informationForm = document.getElementById('information-form');
+            informationForm.scrollIntoView({ behavior: 'smooth' });
+        }
+    
+        document.getElementById('information-form').addEventListener('submit', function(event) {
+            var nom = document.getElementById('nom').value;
+            var prenom = document.getElementById('prenom').value;
+            var adresse = document.getElementById('adresse').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var categorie = document.getElementById('categorie').value;
+            var produit = document.getElementById('panier-produits').value;
+        var quantite = document.getElementById('panier-quantites').value;
+            if (nom === '' || prenom === '' || adresse === '' || email === '' || motdepasse === '' || categorie === ''|| produit === '' || quantite === '') {
+                alert('Veuillez remplir tous les champs.');
+                event.preventDefault();
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+     -->
